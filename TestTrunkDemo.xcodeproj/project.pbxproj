@@ -16,6 +16,7 @@
 		B2BA9C002611B57C00064D6F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BA9BFF2611B57C00064D6F /* main.m */; };
 		B2BA9C0A2611B57C00064D6F /* TestTrunkDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BA9C092611B57C00064D6F /* TestTrunkDemoTests.m */; };
 		B2BA9C152611B57C00064D6F /* TestTrunkDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BA9C142611B57C00064D6F /* TestTrunkDemoUITests.m */; };
+		B2BA9C5F2611CB5A00064D6F /* TestLog.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BA9C5E2611CB5A00064D6F /* TestLog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		B2BA9C102611B57C00064D6F /* TestTrunkDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestTrunkDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2BA9C142611B57C00064D6F /* TestTrunkDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestTrunkDemoUITests.m; sourceTree = "<group>"; };
 		B2BA9C162611B57C00064D6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2BA9C5D2611CB5A00064D6F /* TestLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestLog.h; sourceTree = "<group>"; };
+		B2BA9C5E2611CB5A00064D6F /* TestLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestLog.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,7 @@
 		B2BA9BE12611B57C00064D6F = {
 			isa = PBXGroup;
 			children = (
+				B2BA9C5C2611CB5A00064D6F /* Classes */,
 				B2BA9BEC2611B57C00064D6F /* TestTrunkDemo */,
 				B2BA9C082611B57C00064D6F /* TestTrunkDemoTests */,
 				B2BA9C132611B57C00064D6F /* TestTrunkDemoUITests */,
@@ -135,6 +139,15 @@
 				B2BA9C162611B57C00064D6F /* Info.plist */,
 			);
 			path = TestTrunkDemoUITests;
+			sourceTree = "<group>";
+		};
+		B2BA9C5C2611CB5A00064D6F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B2BA9C5D2611CB5A00064D6F /* TestLog.h */,
+				B2BA9C5E2611CB5A00064D6F /* TestLog.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +281,7 @@
 			files = (
 				B2BA9BF52611B57C00064D6F /* ViewController.m in Sources */,
 				B2BA9BEF2611B57C00064D6F /* AppDelegate.m in Sources */,
+				B2BA9C5F2611CB5A00064D6F /* TestLog.m in Sources */,
 				B2BA9C002611B57C00064D6F /* main.m in Sources */,
 				B2BA9BF22611B57C00064D6F /* SceneDelegate.m in Sources */,
 			);
@@ -375,7 +389,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -428,7 +442,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -442,15 +456,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0.0.2;
 				DEVELOPMENT_TEAM = F447F26NW6;
 				INFOPLIST_FILE = TestTrunkDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = org.TestTrunkDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -460,15 +477,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0.0.2;
 				DEVELOPMENT_TEAM = F447F26NW6;
 				INFOPLIST_FILE = TestTrunkDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = org.TestTrunkDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
